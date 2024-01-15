@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>PDF04-ajax、axios、xhr等基础学习笔记</title>
+      <link href="/2024/01/15/PDF04AJAX%E7%AC%94%E8%AE%B0/"/>
+      <url>/2024/01/15/PDF04AJAX%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[ <!-- 在线显示PDF --><div>  <iframe src="/pdfjs/web/viewer.html?file=../pdf/ajax、axios、xhr.pdf" width="100%" height="800px" frameborder="0"></iframe></div>  <!-- 第二种方式 --> <!-- <div class="row">    <embed src="./mysql.pdf" width="100%" height="550" type="application/pdf"></div> -->]]></content>
+      
+      
+      <categories>
+          
+          <category> ajax </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ajax axios xhr http </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PDF01-JS基础学习笔记</title>
       <link href="/2024/01/15/PDF03js%E7%AC%94%E8%AE%B0/"/>
       <url>/2024/01/15/PDF03js%E7%AC%94%E8%AE%B0/</url>
@@ -13,7 +38,7 @@
       
       <categories>
           
-          <category> 在线PDF </category>
+          <category> javascript </category>
           
       </categories>
       
@@ -38,14 +63,14 @@
       
       <categories>
           
-          <category> 在线PDF </category>
+          <category> node </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> mysql </tag>
+            <tag> node </tag>
             
         </tags>
       
@@ -54,7 +79,7 @@
     
     
     <entry>
-      <title>PDF01-VUE学习笔记</title>
+      <title>PDF03-VUE学习笔记</title>
       <link href="/2024/01/15/PDF01vue/"/>
       <url>/2024/01/15/PDF01vue/</url>
       
@@ -63,7 +88,7 @@
       
       <categories>
           
-          <category> 在线PDF </category>
+          <category> VUE </category>
           
       </categories>
       

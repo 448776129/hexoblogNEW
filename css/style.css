@@ -2,6 +2,10 @@ body {
   background-color: #f2f2f2;
   font-size: 1.25rem;
   line-height: 1.5;
+  padding-right: 0 !important;
+}
+.modal-open {
+  overflow-y: scroll;
 }
 a {
   text-decoration: none;
@@ -14,6 +18,9 @@ a {
 .btn-check:focus+.btn,
 .btn:focus {
   box-shadow: none !important;
+}
+.card-header {
+  background: none;
 }
 .header {
   margin-top: 2em;
@@ -30,6 +37,10 @@ a {
 .header .menu {
   margin: 0;
   padding: 0;
+}
+.header .menu a {
+  padding: 0.2rem;
+  transition: all 0.5s;
 }
 .header .menu .menu-item {
   display: inline-block;

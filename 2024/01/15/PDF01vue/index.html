@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Required meta tags -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
-    <title>
-        
-            LanBai&#39;s Blog
-    </title>
-    
+  <!-- Required meta tags -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  
+  <title>PDF03-VUE学习笔记 | LanBai&#39;s Blog</title>
+  
 <link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 7.0.0"></head>
 
     <body>
         <header class="header container-fluid mb-2 shadow-sm p-3 pt-0  mt-0 bg-white rounded">
-    <div class="blog-title">
-        <a href="/" class="logo">
-            LanBai
-        </a>
+  <div class="blog-title">
+    <a href="/" class="logo">
+      Lan Bai
+    </a>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      <a class="fs-6" href="/"><i class="bi bi-house-door-fill"></i> 首页</a>
+      <a class="fs-6" href="/categories"><i class="bi bi-inboxes-fill"></i> 分类</a>
+      <a class="fs-6" href="/archives">  <i class="bi bi-grid-fill"></i> 归档</a>
+      <a class="fs-6" href="/tag"><i class="bi bi-bookmarks-fill"></i> 标签</a>
+      <a class="fs-6" href="/about"><i class="bi bi-person-lines-fill"></i> About</a>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="bi bi-search"></i>&nbsp;&nbsp;搜索
+</button>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">搜索</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <i class="fa fa-search" aria-hidden="true"></i> 
+                <input type="text" class="form-control" id="searchInput" placeholder="Keyword">
+                <div class="search-content" id="searchResult"></div>
+            </div>
     </div>
-    <nav class="navbar">
-        <ul class="menu">
-            
-                <li class="menu-item">
-                    <a class="nav-link fs-6" href="/">
-                        Home
-                    </a>
-                </li>
-                
-                <li class="menu-item">
-                    <a class="nav-link fs-6" href="/archives">
-                        Archives
-                    </a>
-                </li>
-                
-                <li class="menu-item">
-                    <a class="nav-link fs-6" href="/about">
-                        About
-                    </a>
-                </li>
-                
-                <li class="menu-item">
-                    <a class="nav-link fs-6" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=448776129&site=qq&menu=yes">
-                        QQ
-                    </a>
-                </li>
-                
-        </ul>
-    </nav>
+  </div>
+</div>
+
+<style>
+.search-keyword{
+    color: #c7254e;
+}
+</style>
+
+<script src="/js/search.js"></script>
+
+<script>searchFunc('/search.xml', 'searchInput', 'searchResult');</script>
+    </ul>
+  </nav>
 </header>
             <main class="main">
                 <div class="container-fluid">
     <div class="row">
         
-            <div class="d-none d-md-block col-lg-12 col-xl-3 d-md-block shadow-sm p-3 mb-2 bg-white rounded">
-                <div class="name shadow-sm p-3 mb-2 bg-green rounded">
-    <div class="text-center">
+            
+    <div class="d-none d-md-block col-lg-12 col-xl-3 d-md-block shadow-sm p-3 mb-2 bg-white rounded">
+        
+            <div class="name shadow-sm p-3 mb-2 bg-green rounded">
+    <div class="text-center mt-2">
         <img style="border-radius: 50%!important;" src="https://q1.qlogo.cn/g?b=qq&nk=448776129&s=100&t=448776129"
             class="rounded" alt="...">
     </div>
-    <div class="text text-center">
+    <div class="text text-center mb-2">
         <p class="text-center fs-5">
             蓝白
         </p>
@@ -98,39 +112,45 @@
         </table>
     </div>
 </div>
+                
+
                     <div class="name shadow-sm p-3 mb-2 bg-green rounded">
+    <span>Categories</span>
+    
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/VUE/"><span>
+                    VUE(1)
+                </span></a>
+        </div>
+        
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/node/"><span>
+                    node(1)
+                </span></a>
+        </div>
+        
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/ajax/"><span>
+                    ajax(1)
+                </span></a>
+        </div>
+        
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/javascript/"><span>
+                    javascript(1)
+                </span></a>
+        </div>
+        
+</div>
+                        
+
+                            <div class="name shadow-sm p-3 mb-2 bg-green rounded">Recent Articles
     
         
             <div>
+
                 <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/PDF01vue/"><span>
                         PDF03-VUE学习笔记
-                    </span></a>
-                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
-                </p>
-            </div>
-
-            
-            <div>
-                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/PDF02node%E5%92%8C%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8Eejs/"><span>
-                        PDF02-Node和模板引擎ejs学习笔记
-                    </span></a>
-                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
-                </p>
-            </div>
-
-            
-            <div>
-                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/PDF03js%E7%AC%94%E8%AE%B0/"><span>
-                        PDF01-JS基础学习笔记
-                    </span></a>
-                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
-                </p>
-            </div>
-
-            
-            <div>
-                <a class="fs-6" style="text-decoration: none;" href="/2024/01/14/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(3)/"><span>
-                        Hello World
                     </span></a>
                 <p class="fs-6 small" style="color: gray">2&nbsp; days&nbsp;&nbsp;ago
                 </p>
@@ -138,57 +158,100 @@
 
             
             <div>
-                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/%E5%B8%B8%E7%94%A8%20JavaScript%20%E5%BA%93%20CDN%20%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/"><span>
-                        常用 JavaScript 库 CDN 加速服务
+
+                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/PDF02node%E5%92%8C%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8Eejs/"><span>
+                        PDF02-Node和模板引擎ejs学习笔记
                     </span></a>
-                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
+                <p class="fs-6 small" style="color: gray">2&nbsp; days&nbsp;&nbsp;ago
                 </p>
             </div>
 
             
             <div>
+
+                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/PDF03js%E7%AC%94%E8%AE%B0/"><span>
+                        PDF01-JS基础学习笔记
+                    </span></a>
+                <p class="fs-6 small" style="color: gray">2&nbsp; days&nbsp;&nbsp;ago
+                </p>
+            </div>
+
+            
+            <div>
+
+                <a class="fs-6" style="text-decoration: none;" href="/2024/01/14/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(3)/"><span>
+                        Hello World
+                    </span></a>
+                <p class="fs-6 small" style="color: gray">3&nbsp; days&nbsp;&nbsp;ago
+                </p>
+            </div>
+
+            
+            <div>
+
                 <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/jQuery%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span>
                         jQuery学习笔记
                     </span></a>
-                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
+                <p class="fs-6 small" style="color: gray">2&nbsp; days&nbsp;&nbsp;ago
+                </p>
+            </div>
+
+            
+            <div>
+
+                <a class="fs-6" style="text-decoration: none;" href="/2024/01/15/%E5%B8%B8%E7%94%A8%20JavaScript%20%E5%BA%93%20CDN%20%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/"><span>
+                        常用 JavaScript 库 CDN 加速服务
+                    </span></a>
+                <p class="fs-6 small" style="color: gray">2&nbsp; days&nbsp;&nbsp;ago
                 </p>
             </div>
 
             
 </div>
 
-            </div>
-            <!-- 中间栏目 -->
-            <div class="d-block col-lg-12 col-sm-12 col-xl-7 shadow-sm p-3 mb-2 bg-white rounded">
-                <article class="">
-                    <div class="title">
-                        <h3>
-                            PDF03-VUE学习笔记
-                        </h3>
-                    </div>
-                    <div class="other">
-                        <p>
-                            <span class="fs-6  fw-lighter" style="color: gray">2024-01-15</span>&nbsp;&nbsp;
-                            <span class="fs-6 fw-lighter" style="color: black; ">
-                                蓝白
-                            </span>
-                        </p>
+    </div>
 
-                    </div>
-                    <div class="content">
-                        <article>
-                             <!-- 在线显示PDF -->
+                <!-- 中间栏目 -->
+                <div class="d-block col-lg-12 col-sm-12 col-xl-7 shadow-sm p-3 mb-2 bg-white rounded">
+                    <article class="">
+                        <div class="title">
+                            <h3>
+                                PDF03-VUE学习笔记
+                            </h3>
+                        </div>
+                        <div class="other">
+                            <p>
+                                <span class="fs-6  fw-lighter" style="color: gray">2024-01-15</span>&nbsp;&nbsp;
+                                <span class="fs-6 fw-lighter" style="color: black; ">
+                                    蓝白
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="content mb-5">
+                            <article>
+                                 <!-- 在线显示PDF -->
  <!-- 第一种方式，可调整pdf显示的大小，比较灵活 -->
 <div>
   <iframe src="/pdfjs/web/viewer.html?file=../pdf/vue.pdf" width="100%" height="800px" frameborder="0"></iframe>
 </div> 
 
-                        </article>
-                    </div>
-                </article>
-            </div>
-            
-                <!-- 右侧栏目 -->
+                            </article>
+
+                        </div>
+                        <div class="comment">
+                            <script src="https://giscus.app/client.js" data-repo="448776129/hexoblogNEW"
+                                data-repo-id="R_kgDOLE9s3A" data-category="Announcements"
+                                data-category-id="DIC_kwDOLE9s3M4Ccc3b" data-mapping="pathname" data-strict="0"
+                                data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+                                data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy"
+                                crossorigin="anonymous" async>
+                                </script>
+                        </div>
+                    </article>
+                </div>
+                
+                    <!-- 右侧栏目 -->
 <div class="d-none d-xl-block col-lg-2 col-xl-2 shadow-sm p-3 mb-2 bg-white rounded">
     <div class="card text-white bg-primary mb-3 shadow-sm p-3 mb-2 bg-green rounded" style="max-width: 18rem;">
         <div class="card-header">新</div>
@@ -220,6 +283,7 @@
     </div>
 </div>
     </div>
+
 </div>
 <style>
     article img {
@@ -227,6 +291,40 @@
     }
 </style>
             </main>
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+            
+                <!-- footer -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col12 shadow-sm p-3  bg-white rounded">
+
+            <p class="text-center">
+                <span class="fs-6">© <!-- -->2023 - 2024<!-- --> <a class="" href="https://lbcolor.cn/">LanBai</a>
+                    <!-- -->All rights
+                    reserved.</span>
+                <span class="fs-6">Powered
+                    by<!-- --> <a class="" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>&Theme designed by <a
+                        target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=448776129&site=qq&menu=yes">Lan Bai</a></span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+    
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+    
 
 </html>

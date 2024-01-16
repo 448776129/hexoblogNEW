@@ -1,2 +1,0 @@
-# hexoblogNEW
-hexoblogNEW博客

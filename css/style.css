@@ -22,11 +22,18 @@ a {
 .card-header {
   background: none;
 }
+.header-fix {
+  width: 100%;
+  height: 80px;
+}
 .header {
+  width: 100%;
   margin-top: 2em;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  position: fixed;
+  z-index: 999;
 }
 .header .blog-title .logo {
   color: #aaa;
@@ -97,4 +104,19 @@ a {
 .archive .post-archive .post-item .post-title {
   color: #000;
   text-decoration: none;
+}
+.list {
+  border-bottom: 1px solid #dbdbff;
+}
+.list .other {
+  color: #334108;
+}
+.list .content {
+  color: #334155;
+}
+.list .images {
+  width: 88%;
+}
+.list .images img {
+  width: 100%;
 }

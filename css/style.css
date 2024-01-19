@@ -28,37 +28,150 @@ a {
 }
 .header {
   width: 100%;
-  margin-top: 2em;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
   position: fixed;
   z-index: 999;
 }
-.header .blog-title .logo {
-  color: #aaa;
-  font-size: 2em;
-  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
-  text-decoration: none;
-}
-.header .menu {
-  margin: 0;
-  padding: 0;
-}
-.header .menu a {
-  padding: 0.2rem;
-  transition: all 0.5s;
-}
-.header .menu .menu-item {
-  display: inline-block;
-  margin-right: 10px;
-}
-.header .menu .menu-item-link {
-  color: #aaa;
-  text-decoration: none;
-}
-.header .menu .menu-item-link:hover {
+.header:hover {
   color: #368ccb;
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.navbar,
+.navbar-burger,
+.menu,
+.background {
+  position: fixed;
+}
+.background {
+  z-index: -1;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.open .background {
+  backdrop-filter: blur(10px);
+}
+.navbar {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #feffff;
+  color: #000;
+}
+.navbar > button {
+  font-size: 28px;
+}
+.navbar-logo {
+  height: 25px;
+}
+.navbar-burger {
+  z-index: 5;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+}
+.navbar-burger div {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  background-image: url("/assets/list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.open .navbar-burger div {
+  background-image: url("/assets/x.svg");
+}
+.navbar-search {
+  color: #0ff;
+  display: flex;
+}
+.navbar-search::placeholder {
+  color: #a7a7a7;
+}
+.menu {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+.menu > a {
+  color: #000;
+  font-size: 32px;
+  font-family: "Euclid Circular A";
+  text-decoration: none;
+}
+body.open .menu > a {
+  animation: appear 0.3s both;
+}
+@-moz-keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .post {
   margin: 1em auto;

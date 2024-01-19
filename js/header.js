@@ -1,3 +1,7 @@
 $(window).on('scroll', function(){
-   $(".header").addClass('child');
+   $("nav").addClass('child');
 })
+
+const toggleMenu = () => {
+       document.body.classList.toggle("open");
+};

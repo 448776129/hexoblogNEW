@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="baidu-site-verification" content="codeva-9KMCVaeqCQ" />
+  <!-- Bootstrap icons CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css" type="text/css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.staticfile.net/bootstrap/5.3.2/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js" type="application/javascript"></script>
+<script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\\/script>')</script>
+ <!-- 引入 Inter 字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="icon" href="favicon.ico" />
+  
+  <title>常用 JavaScript 库 CDN 加速服务 | LanBai&#39;s Blog-记录前端学习和生活点滴1</title>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="LanBai's Blog" type="application/atom+xml">
+</head>
+
+    <body>
+        <div class="header-fix">
+    <div class="background"></div>
+    
+    <nav class="navbar">
+    
+      <a href="/">蓝白's Blog</a>
+      <button type="button" class="btn btn-primary navbar-search fs-6 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-search"></i><span class="text-black-100">&nbsp;搜索</span></button>
+    </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"><div></div></button>
+    <nav class="menu">
+    <a class="nav-link" style="animation-delay: 0.1s" href="/"><i class="bi bi-house-door-fill"></i> 首页</a>
+    <a class="nav-link" style="animation-delay: 0.1s" href="/categories"><i class="bi bi-inboxes-fill"></i> 分类</a>
+    <a class="nav-link" style="animation-delay: 0.1s" href="/archives"> <i class="bi bi-grid-fill"></i> 归档</a>
+    <a class="nav-link" style="animation-delay: 0.1s" href="/tags"><i class="bi bi-bookmarks-fill"></i> 标签</a>
+    <a class="nav-link" style="animation-delay: 0.1s" href="/about/"><i class="bi bi-person-lines-fill"></i>About</a>
+    <a class="nav-link" style="animation-delay: 0.1s" href="/links"><i class="bi bi-balloon-fill"></i> 友情链接</a>
+    </nav>
+</div>
+<style>
+  .child {
+    background: rgba(255, 255, 255, .7) !important;
+    backdrop-filter: blur(10px);
+    filter: blur(0px)
+  }
+  button .bi{
+    color:#fff !important;
+  }
+  a .bi{
+    color:#000 !important;
+  }
+</style>
+
+<script src="/js/header.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">搜索</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <i class="fa fa-search" aria-hidden="true"></i> 
+                <input type="text" class="form-control" id="searchInput" placeholder="Keyword">
+                <div class="search-content" id="searchResult"></div>
+            </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.search-keyword{
+    color: #c7254e;
+}
+/* 修复模态框打开时滚动条消失的问题 */
+.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+/* 防止页面内容跳动 */
+body {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* 模态框样式调整 */
+.modal {
+  overflow-y: auto;
+}
+</style>
+
+<script src="/js/search.js"></script>
+
+<script>searchFunc('/search.xml', 'searchInput', 'searchResult');</script>
+
+
+<script src="/js/search.js"></script>
+
+<script>searchFunc('/search.xml', 'searchInput', 'searchResult');</script>
+            <main class="main">
+                <div class="container-fluid">
+  <div class="row">
+    
+    
+    <div class="d-none d-md-block col-lg-12 col-xl-3 d-md-block shadow-sm p-3 mb-2 bg-white rounded">
+        
+            <div class="shadow name shadow-sm p-3 mb-2 bg-green rounded  bg-white">
+    <div class="text-center mt-2">
+        <img style="border-radius: 50%!important;" src="https://q1.qlogo.cn/g?b=qq&nk=448776129&s=100&t=448776129"
+            class="rounded" alt="...">
+    </div>
+    <div class="text text-center mb-2">
+        <p class="text-center fs-5">
+            蓝白
+        </p>
+        <p class="text-center fs-6 fw-lighter text-black-50">
+            365200ok寓意365天都200ok！
+        </p>
+    </div>
+    <div class="numbers" style="display: flex;
+        justify-content: center;">
+        <table style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th class="p-2">Posts</th>
+                    <th class="p-2">Categories</th>
+                    <th class="p-2">Tags</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="text-center">
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        3
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/css/left.css">
+
+
+                
+
+                    <div class="shadow name shadow-sm p-3 mb-3 bg-green rounded  bg-white">
+    <span>Categories</span>
+    
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/web/"><span>
+                    web(1)
+                </span></a>
+        </div>
+        
+        <div>
+            <a class="fs-6" style="text-decoration: none;" href="/categories/%E6%97%A5%E5%B8%B8%E7%82%B9%E6%BB%B4/"><span>
+                    日常点滴(1)
+                </span></a>
+        </div>
+        
+</div>
+                     
+
+                    <div class="shadow name shadow-sm p-3 mb-3 bg-green rounded  bg-white">
+  <span>Tags</span>
+  <div class="fs-6 pt-1 flex flex-row flex-wrap items-center">
+    
+    <a style="display:block folat:right" class="fs-6 pe-2" style="text-decoration: none;" href="/tags/webcdn/"><span>
+        webcdn
+      </span></a>
+    
+    <a style="display:block folat:right" class="fs-6 pe-2" style="text-decoration: none;" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AC%E5%85%B1%E5%BA%93/"><span>
+        前端公共库
+      </span></a>
+    
+    <a style="display:block folat:right" class="fs-6 pe-2" style="text-decoration: none;" href="/tags/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/"><span>
+        新年快乐
+      </span></a>
+    
+  </div>
+</div>
+                        
+
+                            <div class="shadow name shadow-sm p-3 mb-2 bg-green rounded  bg-white">Recent Articles
+    
+        
+            <div>
+
+                <a class="fs-6" style="text-decoration: none;" href="/blog/jscdn.html"><span>
+                        常用 JavaScript 库 CDN 加速服务
+                    </span></a>
+                <p class="fs-6 small" style="color: gray">1&nbsp; days&nbsp;&nbsp;ago
+                </p>
+            </div>
+
+            
+            <div>
+
+                <a class="fs-6" style="text-decoration: none;" href="/blog/newyear.html"><span>
+                        新年快乐
+                    </span></a>
+                <p class="fs-6 small" style="color: gray">610&nbsp; days&nbsp;&nbsp;ago
+                </p>
+            </div>
+
+            
+</div>
+
+                
+    </div>
+    <div class="d-block col-lg-12 col-sm-12 col-xl-9 shadow-sm p-3 mb-2 bg-white rounded">
+  <style>
+    /* 基础样式重置 */
+    article, div, h3, p, span {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* 主容器样式 */
+    .d-block {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 100%;
+    }
+    
+    /* 标题样式 */
+    .title h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #f6f6f6;
+    }
+    
+    /* 元信息样式 */
+    .other {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .other p {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .other span {
+      font-size: 0.9rem;
+    }
+    
+    .other span:first-child {
+      color: #8590a6;
+    }
+    
+    .other span:last-child {
+      color: #444;
+      font-weight: 500;
+    }
+    
+    /* 内容区域样式 - 参考知乎字体风格 */
+    .content {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+    }
+    
+    .content article {
+      padding: 0.5rem 0;
+    }
+    
+    .content h1, .content h2, .content h3, .content h4 {
+      margin: 1.5rem 0 1rem;
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+    
+    .content h2 {
+      font-size: 1.375rem;
+    }
+    
+    .content h3 {
+      font-size: 1.25rem;
+    }
+    
+    .content p {
+      margin-bottom: 1.2rem;
+      word-break: break-word;
+    }
+    
+    .content a {
+      color: #175199;
+      text-decoration: none;
+    }
+    
+    .content a:hover {
+      color: #0f386c;
+    }
+    
+    /* 图片样式 - 80%缩放居中，最大宽度800px */
+    .content img {
+      display: block;
+      margin: 1.5rem auto;
+      max-width: 800px;
+      width: 80%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    
+    .content pre {
+      background: #f6f8fa;
+      padding: 1rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      font-size: 0.9em;
+    }
+    
+    .content code {
+      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      background: #f6f8fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    
+    /* 评论区域样式 */
+    .comment {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #f6f6f6;
+    }
+    
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      .title h3 {
+        font-size: 1.5rem;
+      }
+      
+      .content {
+        font-size: 15px;
+      }
+      
+      .content img {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <article class="">
+    <div class="title">
+      <h3>
+        常用 JavaScript 库 CDN 加速服务
+      </h3>
+    </div>
+    <div class="other">
+
+<p class="about-meta-tags">
+    <span class="fs-6 fw-lighter" style="color: gray">2025-10-11</span>
+    <span class="fs-6 fw-lighter pe-3">蓝白</span>
+    
+    
+        
+            <a class="fs-6 pe-2" style="text-decoration: none; display: inline-block; float: right;" href="/tags/webcdn/">
+                <span class="badge bg-primary" style="color: #fff; margin-left: 4px;">
+                    webcdn
+                </span>
+            </a>
+        
+            <a class="fs-6 pe-2" style="text-decoration: none; display: inline-block; float: right;" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AC%E5%85%B1%E5%BA%93/">
+                <span class="badge bg-primary" style="color: #fff; margin-left: 4px;">
+                    前端公共库
+                </span>
+            </a>
+        
+    
+</p>
+
+    </div>
+    <div class="content mb-5">
+      <article>
+        <aside>  国外的谷歌、微软，国内的七牛、又拍云、百度、360 等都有各自的js库CDN加速服务。 <!-- more --> 
+</aside>
+
+<aside> 这是自学前端期间的笔记，从未想到会发布于此，所以写的较乱，不过稍加修改后，勉强能看，希望多多包涵。
+</aside>
+
+<p><img src="https://filehub.365200.xyz/file/KKK/1753324341075_d10ee0474775023028651dfd1ef3e88f89e50e05b764-Fx41uz_fw658.webp" data-original="http://img2.365200.xyz/https://raw.githubusercontent.com/448776129/imghub/main/img/1705811154330.jpeg"></p>
+<h1 id="📝-主旨内容"><a href="#📝-主旨内容" class="headerlink" title="📝 主旨内容"></a>📝 主旨内容</h1><h2 id="BootCDNopen-in-new-window（又拍云提供）"><a href="#BootCDNopen-in-new-window（又拍云提供）" class="headerlink" title="#BootCDNopen in new window（又拍云提供）"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#bootcdn-%E5%8F%88%E6%8B%8D%E4%BA%91%E6%8F%90%E4%BE%9B">#</a><a target="_blank" rel="noopener" href="https://www.bootcdn.cn/">BootCDNopen in new window</a>（又拍云提供）</strong></h2><blockquote>
+<p>BootCDN 是 极兔云 联合 Bootstrap 中文网 共同支持并维护的前端开源项目免费 CDN 服务，致力于为 Bootstrap、jQuery、React、Vue.js 一样优秀的前端开源项目提供稳定、快速的免费 CDN 加速服务。BootCDN 所收录的开源项目主要同步于 cdnjs 开源项目仓库。</p>
+<p>自2013年上线以来已经累计为近百万网站提供了稳定、可靠的免费 CDN 加速服务。</p>
+</blockquote>
+<h2 id="又拍云-JS-库加速服务open-in-new-window"><a href="#又拍云-JS-库加速服务open-in-new-window" class="headerlink" title="#又拍云 JS 库加速服务open in new window"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#%E5%8F%88%E6%8B%8D%E4%BA%91-js-%E5%BA%93%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1">#</a><a target="_blank" rel="noopener" href="http://jscdn.upai.com/">又拍云 JS 库加速服务open in new window</a></strong></h2><blockquote>
+<p>又拍云为您托管常用的JavaScript库，您可以在自己的网页上直接通过script标记引用这些资源。这样做不仅可以为您节省流量，还能通过我们的CDN加速，获得更快的访问速度。</p>
+</blockquote>
+<h2 id="Staticfile-CDNopen-in-new-window（七牛云-X-掘金）"><a href="#Staticfile-CDNopen-in-new-window（七牛云-X-掘金）" class="headerlink" title="#Staticfile CDNopen in new window（七牛云 X 掘金）"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#staticfile-cdn-%E4%B8%83%E7%89%9B%E4%BA%91-x-%E6%8E%98%E9%87%91">#</a><a target="_blank" rel="noopener" href="http://staticfile.org/">Staticfile CDNopen in new window</a>（七牛云 X 掘金）</strong></h2><blockquote>
+<p>我们的目标是提供这样一个仓库，让它尽可能全面收录优秀的开源库，并免费为之提供 CDN 加速服务，使之有更好的访问速度和稳定的环境。同时，我们也提供开源库源接入的入口，让所有人都可以提交开源库，包括 JavaScript、CSS、图片和 swf 等静态文件。</p>
+</blockquote>
+<h2 id="新浪-SAE-公共资源open-in-new-window"><a href="#新浪-SAE-公共资源open-in-new-window" class="headerlink" title="#新浪 SAE 公共资源open in new window"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#%E6%96%B0%E6%B5%AA-sae-%E5%85%AC%E5%85%B1%E8%B5%84%E6%BA%90">#</a><a target="_blank" rel="noopener" href="http://lib.sinaapp.com/">新浪 SAE 公共资源open in new window</a></strong></h2><blockquote>
+<p>SAE 的为很多流行的开源 js&#x2F;css 库提供了 CDN 加速服务，开发者可以引用我们的 js&#x2F;css 库来提升你的应用的访问速度。</p>
+</blockquote>
+<h2 id="Microsoft-Ajax-Content-Delivery-Networkopen-in-new-window"><a href="#Microsoft-Ajax-Content-Delivery-Networkopen-in-new-window" class="headerlink" title="#Microsoft Ajax Content Delivery Networkopen in new window"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#microsoft-ajax-content-delivery-network">#</a><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/aspnet/ajax/cdn/overview">Microsoft Ajax Content Delivery Networkopen in new window</a></strong></h2><blockquote>
+<p>The Microsoft Ajax Content elivery Network (CDN) hosts popular third party JavaScript libraries such as jQuery and enables you to easily add them to your Web applications.</p>
+</blockquote>
+<h2 id="cdnjs-open-in-new-window-CloudFlare"><a href="#cdnjs-open-in-new-window-CloudFlare" class="headerlink" title="#cdnjs open in new window (CloudFlare)"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#cdnjs-cloudflare">#</a><a target="_blank" rel="noopener" href="https://cdnjs.com/">cdnjs open in new window</a> (CloudFlare)</strong></h2><blockquote>
+<p>The free and open source CDN for web related libraries to speed up your website!</p>
+</blockquote>
+<h2 id="jsDelivropen-in-new-window-Multi-CDN-有国内节点"><a href="#jsDelivropen-in-new-window-Multi-CDN-有国内节点" class="headerlink" title="#jsDelivropen in new window)(Multi-CDN, 有国内节点)"></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#jsdelivr-multi-cdn-%E6%9C%89%E5%9B%BD%E5%86%85%E8%8A%82%E7%82%B9">#</a><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivropen in new window</a>)(Multi-CDN, 有国内节点)</strong></h2><blockquote>
+<p>jsDelivr is a public open-source CDN (Content Delivery Network) where anyone can submit a project to be hosted and delivered by our network.</p>
+</blockquote>
+<h1 id="🤗-总结归纳"><a href="#🤗-总结归纳" class="headerlink" title="🤗 总结归纳"></a>🤗 总结归纳</h1><h2 id="总结："><a href="#总结：" class="headerlink" title="#总结："></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#%E6%80%BB%E7%BB%93">#</a>总结：</strong></h2><p>面向国内用户推荐使用 BootCDN，面向国际用户使用 jsDelivr。</p>
+<h3 id="小提示："><a href="#小提示：" class="headerlink" title="#小提示："></a><strong><a target="_blank" rel="noopener" href="https://www.lbcolor.cn/blog/jscdn.html#%E5%B0%8F%E6%8F%90%E7%A4%BA">#</a>小提示：</strong></h3><p>如果使用 CDN 服务，可以在本地备份一份，万一 CDN 挂了，可以从本地读取：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js&gt;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="variable language_">window</span>.<span class="property">jQuery</span> || <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;&lt;script src=&quot;/jquery.min.js&quot;&gt;&lt;\\/script&gt;&#x27;</span>)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.btn-check</span><span class="selector-pseudo">:focus</span>+<span class="selector-class">.btn</span>, <span class="selector-class">.btn</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">	<span class="attribute">box-shadow</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<aside> 💡 欢迎您在底部评论区留言，一起交流~
+
+</aside>
+
+      </article>
+    </div>
+    <div class="comment">
+      <script src="https://giscus.app/client.js" data-repo="448776129/hexoblogNEW" data-repo-id="R_kgDOLE9s3A" data-category="Announcements" data-category-id="DIC_kwDOLE9s3M4Ccc3b" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+      </script>
+    </div>
+  </article>
+  <script src="/js/post.js"></script>
+  <script src="/js/hight.js"></script>
+
+</div>
+</div>
+<style>
+  article img {
+    width: 100%;
+  }
+</style>
+            </main>
+            
+                <!-- footer -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col12 shadow-sm p-3  bg-white rounded">
+
+      <p class="text-center">
+        <span class="fs-6">©
+          <!-- -->2023 - 2025
+          <!-- --> <a class="" target="_blank" rel="noopener" href="https://lbcolor.cn/">LanBai</a>
+          <!-- -->All rights
+          reserved.
+        </span>
+        <span class="fs-6">Powered
+          by
+          <!-- --> <a class="" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>&Theme designed by <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=448776129&site=qq&menu=yes">Lan Bai</a>
+        </span>
+      </p>
+      <p class="text-center"><span id="momk" class="fs-6"></span></p>
+       
+    </div>
+  </div>
+</div>
+
+    <script type="text/javascript">
+        function NewDate(str) {
+            str = str.split('-');
+            var date = new Date();
+            date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+            date.setUTCHours(0, 0, 0, 0);
+            return date;
+        }
+        function momxc() {
+            var birthDay = NewDate("2024-1-15");
+            var today = new Date();
+            var timeold = today.getTime() - birthDay.getTime();
+            var sectimeold = timeold / 1000
+            var secondsold = Math.floor(sectimeold);
+            var msPerDay = 24 * 60 * 60 * 1000; var e_daysold = timeold / msPerDay;
+            var daysold = Math.floor(e_daysold);
+            var e_hrsold = (daysold - e_daysold) * -24;
+            var hrsold = Math.floor(e_hrsold);
+            var e_minsold = (hrsold - e_hrsold) * -60;
+            var minsold = Math.floor((hrsold - e_hrsold) * -60); var seconds = Math.floor((minsold - e_minsold) * -60).toString();
+            document.getElementById("momk").innerHTML = "本站已安全运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+            setTimeout(momxc, 1000);
+        } momxc();
+    </script>
+    <style>
+        /* #momk {
+            animation: change 10s infinite;
+            font-weight: 800;
+        } */
+
+        /* @keyframes change {
+            0% {
+                color: #5cb85c;
+            }
+
+            25% {
+                color: #556bd8;
+            }
+
+            50% {
+                color: #e40707;
+            }
+
+            75% {
+                color: #66e616;
+            }
+
+            100% {
+                color: #67bd31;
+            }
+        } */
+    </style>
+
+    
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+    
+
+</html>

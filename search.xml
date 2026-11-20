@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>常用 JavaScript 库 CDN 加速服务</title>
+      <link href="/blog/jscdn.html"/>
+      <url>/blog/jscdn.html</url>
+      
+        <content type="html"><![CDATA[<aside>  国外的谷歌、微软，国内的七牛、又拍云、百度、360 等都有各自的js库CDN加速服务。 <!-- more --> </aside><aside> 这是自学前端期间的笔记，从未想到会发布于此，所以写的较乱，不过稍加修改后，勉强能看，希望多多包涵。</aside><p><img src="http://img2.365200.xyz/https://raw.githubusercontent.com/448776129/imghub/main/img/1705811154330.jpeg"></p><h1 id="📝-主旨内容"><a href="#📝-主旨内容" class="headerlink" title="📝 主旨内容"></a>📝 主旨内容</h1><h2 id="BootCDNopen-in-new-window（又拍云提供）"><a href="#BootCDNopen-in-new-window（又拍云提供）" class="headerlink" title="#BootCDNopen in new window（又拍云提供）"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#bootcdn-%E5%8F%88%E6%8B%8D%E4%BA%91%E6%8F%90%E4%BE%9B">#</a><a href="https://www.bootcdn.cn/">BootCDNopen in new window</a>（又拍云提供）</strong></h2><blockquote><p>BootCDN 是 极兔云 联合 Bootstrap 中文网 共同支持并维护的前端开源项目免费 CDN 服务，致力于为 Bootstrap、jQuery、React、Vue.js 一样优秀的前端开源项目提供稳定、快速的免费 CDN 加速服务。BootCDN 所收录的开源项目主要同步于 cdnjs 开源项目仓库。</p><p>自2013年上线以来已经累计为近百万网站提供了稳定、可靠的免费 CDN 加速服务。</p></blockquote><h2 id="又拍云-JS-库加速服务open-in-new-window"><a href="#又拍云-JS-库加速服务open-in-new-window" class="headerlink" title="#又拍云 JS 库加速服务open in new window"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#%E5%8F%88%E6%8B%8D%E4%BA%91-js-%E5%BA%93%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1">#</a><a href="http://jscdn.upai.com/">又拍云 JS 库加速服务open in new window</a></strong></h2><blockquote><p>又拍云为您托管常用的JavaScript库，您可以在自己的网页上直接通过script标记引用这些资源。这样做不仅可以为您节省流量，还能通过我们的CDN加速，获得更快的访问速度。</p></blockquote><h2 id="Staticfile-CDNopen-in-new-window（七牛云-X-掘金）"><a href="#Staticfile-CDNopen-in-new-window（七牛云-X-掘金）" class="headerlink" title="#Staticfile CDNopen in new window（七牛云 X 掘金）"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#staticfile-cdn-%E4%B8%83%E7%89%9B%E4%BA%91-x-%E6%8E%98%E9%87%91">#</a><a href="http://staticfile.org/">Staticfile CDNopen in new window</a>（七牛云 X 掘金）</strong></h2><blockquote><p>我们的目标是提供这样一个仓库，让它尽可能全面收录优秀的开源库，并免费为之提供 CDN 加速服务，使之有更好的访问速度和稳定的环境。同时，我们也提供开源库源接入的入口，让所有人都可以提交开源库，包括 JavaScript、CSS、图片和 swf 等静态文件。</p></blockquote><h2 id="新浪-SAE-公共资源open-in-new-window"><a href="#新浪-SAE-公共资源open-in-new-window" class="headerlink" title="#新浪 SAE 公共资源open in new window"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#%E6%96%B0%E6%B5%AA-sae-%E5%85%AC%E5%85%B1%E8%B5%84%E6%BA%90">#</a><a href="http://lib.sinaapp.com/">新浪 SAE 公共资源open in new window</a></strong></h2><blockquote><p>SAE 的为很多流行的开源 js&#x2F;css 库提供了 CDN 加速服务，开发者可以引用我们的 js&#x2F;css 库来提升你的应用的访问速度。</p></blockquote><h2 id="Microsoft-Ajax-Content-Delivery-Networkopen-in-new-window"><a href="#Microsoft-Ajax-Content-Delivery-Networkopen-in-new-window" class="headerlink" title="#Microsoft Ajax Content Delivery Networkopen in new window"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#microsoft-ajax-content-delivery-network">#</a><a href="https://learn.microsoft.com/en-us/aspnet/ajax/cdn/overview">Microsoft Ajax Content Delivery Networkopen in new window</a></strong></h2><blockquote><p>The Microsoft Ajax Content elivery Network (CDN) hosts popular third party JavaScript libraries such as jQuery and enables you to easily add them to your Web applications.</p></blockquote><h2 id="cdnjs-open-in-new-window-CloudFlare"><a href="#cdnjs-open-in-new-window-CloudFlare" class="headerlink" title="#cdnjs open in new window (CloudFlare)"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#cdnjs-cloudflare">#</a><a href="https://cdnjs.com/">cdnjs open in new window</a> (CloudFlare)</strong></h2><blockquote><p>The free and open source CDN for web related libraries to speed up your website!</p></blockquote><h2 id="jsDelivropen-in-new-window-Multi-CDN-有国内节点"><a href="#jsDelivropen-in-new-window-Multi-CDN-有国内节点" class="headerlink" title="#jsDelivropen in new window)(Multi-CDN, 有国内节点)"></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#jsdelivr-multi-cdn-%E6%9C%89%E5%9B%BD%E5%86%85%E8%8A%82%E7%82%B9">#</a><a href="https://www.jsdelivr.com/">jsDelivropen in new window</a>)(Multi-CDN, 有国内节点)</strong></h2><blockquote><p>jsDelivr is a public open-source CDN (Content Delivery Network) where anyone can submit a project to be hosted and delivered by our network.</p></blockquote><h1 id="🤗-总结归纳"><a href="#🤗-总结归纳" class="headerlink" title="🤗 总结归纳"></a>🤗 总结归纳</h1><h2 id="总结："><a href="#总结：" class="headerlink" title="#总结："></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#%E6%80%BB%E7%BB%93">#</a>总结：</strong></h2><p>面向国内用户推荐使用 BootCDN，面向国际用户使用 jsDelivr。</p><h3 id="小提示："><a href="#小提示：" class="headerlink" title="#小提示："></a><strong><a href="https://www.lbcolor.cn/blog/jscdn.html#%E5%B0%8F%E6%8F%90%E7%A4%BA">#</a>小提示：</strong></h3><p>如果使用 CDN 服务，可以在本地备份一份，万一 CDN 挂了，可以从本地读取：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js&gt;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="variable language_">window</span>.<span class="property">jQuery</span> || <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;&lt;script src=&quot;/jquery.min.js&quot;&gt;&lt;\\/script&gt;&#x27;</span>)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.btn-check</span><span class="selector-pseudo">:focus</span>+<span class="selector-class">.btn</span>, <span class="selector-class">.btn</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line"><span class="attribute">box-shadow</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><aside> 💡 欢迎您在底部评论区留言，一起交流~</aside>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> webcdn </tag>
+            
+            <tag> 前端公共库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新年快乐</title>
+      <link href="/blog/newyear.html"/>
+      <url>/blog/newyear.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://filehub.365200.xyz/file/imghub/1753324404067_1736694252759.jpeg"><br>辞旧迎新,兔年留念，新年到,龙年来临，希望在新的一年里，心想事成，无功受禄🙂</p><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114877406387686&bvid=BV1DeuDzeEuo&cid=31138645524&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常点滴 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新年快乐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -1,0 +1,6 @@
+.name img:hover {
+  transform: rotate(360deg);
+}
+.name img {
+  transition: transform 2s ease-in-out;
+}
